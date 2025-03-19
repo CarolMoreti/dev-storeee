@@ -33,6 +33,10 @@ header .header-main{
     align-items: center;
     gap: 40px;
 }
+.header-left li a{
+    text-decoration: none;
+    color: #7f7f7f;
+}
 .header-left li a:hover{
     color:#000000;
 }
