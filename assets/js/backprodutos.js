@@ -38,7 +38,45 @@ function pesquisaProdutos(){
             var cardProd =document.createElement('div')
             cardProd.setAttribute('class', 'product-item')
             cardProd.innerHTML = 
-            '<a href="./product.html?'+id+'">'+'<div class="product-photo">'+'<img src+"./assets/images/products/'+foto+'"/>'+'</div>'
+            '<a href="./product.html?'+id+'">'+
+            '<div class="product-photo">'+'<img src="./assets/images/products/'+foto+'"/>'+
+            '</div>'+'<div class="product-name">'+desc+'</div>'+
+            '<div class="product-price">R$'+preco+'</div>'+
+            '<div class="product-info">Pague via Pix</div>'+
+            '</a><div class="product-fav">'+
+            '<img src="./assets/images/ui/heart-3-line.png"/>'+'</div></div>';
+            divProds.appendChild(cardProd)
+        }
+        for(var j=0;j<idsProds.length;j=j+4){
+            var id =idsProds[j]
+            var desc = descProds[j]
+            var tamanho =tamanhoProds[j]
+            var preco =precoProds[j]
+            var foto =fotoProds[j]
+            var categoria=categoriaProds[j]
+
+            var cardProd =document.createElement('div')
+            cardProd.setAttribute('class', 'product-item')
+            cardProd.innerHTML = 
+            '<a href="./product.html?'+id+'">'+
+            '<div class="product-photo">'+'<img src="./assets/images/products/'+foto+'"/>'+
+            '</div>'+'<div class="product-name">'+desc+'</div>'+
+            '<div class="product-price">R$'+preco+'</div>'+
+            '<div class="product-info">Pague via Pix</div>'+
+            '</a><div class="product-fav">'+
+            '<img src="./assets/images/ui/heart-3-line.png"/>'+'</div></div>';
+            divSeen.appendChild(cardProd)
         }
     })
+    .catch(error=>{
+        alert("Erro: "+error);
+    });
+}
+function limpavetores(){
+    idsProds=[];
+    descProds=[];
+    precoProds=[];
+    categoriaProds=[];
+    fotoProds=[];
+    tamanhoProds=[];
 }
