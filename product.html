@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/single-product.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
 </head>
 <body>
     <section class="header-warning">
@@ -62,6 +63,7 @@
     <main>
         <section class="breadcrumb" id="breadcrumb">
             Home > Adesivos > Adesivo HTML
+        </section>
             <section class="product" id="product">
                 <div class="photo-area">
                     <div class="photo">
@@ -93,11 +95,30 @@
                     <div class="shipping">
                         <div>Calcular frete e prazo:</div>
                         <div class="shipping-input">
-                            
+                            <input type="text" class="input" placeholder="Digite seu CEP">
+                            <div class="button">Calcular</div>
                         </div>
                     </div>
                 </div>
             </section>
+        <section class="description">
+            <div class="desc-header">
+                <div>Informações do Produto</div>
+                <div class="btn-icon">
+                    <img src="assets/images/ui/arrow-left-s-line.png" alt="">
+                </div>
+            </div>
+            <div class="desc-body" id="descProd">
+                Texto sobre o produto
+            </div>
+        </section>
+        <section class="related">
+            <div class="related-title">
+                Você também vai gostar
+            </div>
+            <div class="related-grid" id="products-area">
+
+            </div>
         </section>
     </main>
     <footer>
@@ -152,4 +173,5 @@
 <script type="text/javascript" src="./assets/js/header.js"></script>
 <script type="text/javascript" src="./assets/js/footer.js"></script>
 <script type="text/javascript" src="./assets/js/home.js"></script>
+<script type="text/javascript" src="./assets/js/backDetalhe.js"></script>
 </html>
