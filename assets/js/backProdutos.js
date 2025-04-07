@@ -15,7 +15,7 @@ window.onload=()=>{
 function pesquisaProdutos(){
     limpa_vetores();
     //faz a requisicao ao backend
-    fetch('http://localhost/devstore/produtos.php')
+    fetch('http://localhost/dev-store/produtos.php')
     //transforma a resposta do servidor
     .then(response=>response.json())
     //manipula os dados e monta a resposta na tela

@@ -56,5 +56,13 @@
         echo json_encode($result, JSON_UNESCAPED_UNICODE);
         
     }
-
+    function handleGetFiltroCategoria($pdo){
+        $filtro = $_GET['categoriaProd'];
+        $sql = "SELECT * from tblProdutos where
+        categoriaProd='$filtro'";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        echo json_encode($result, JSON_UNESCAPED_UNICODE);
+    }
 ?>
