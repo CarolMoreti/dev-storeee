@@ -1,9 +1,11 @@
 footer{
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
 }
-.footer-menu, .footer-contacts, .footer-bottom{
-    padding:48px 0;
+.footer-menu,
+.footer-contacts,
+.footer-bottom{
+    padding: 48px 0;
     max-width: 1024px;
     margin: auto;
 }
@@ -27,7 +29,7 @@ footer{
 }
 .footer-menu li a{
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-size: 2rem;
 }
 .footer-title{
@@ -49,13 +51,13 @@ footer{
 }
 .btn-icon-text{
     height: 80px;
-    border: 1px solid#d9d9d9;
-    border-radius: 4rem;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-size: 2rem;
     padding: 0 32px;
 }
@@ -70,8 +72,7 @@ footer{
     align-items: center;
     gap: 72px;
 }
-
-@media (width>1024px){
+@media(width>1024px){
     .footer-menu{
         padding-top: 63px;
         flex-direction: row;
@@ -101,3 +102,4 @@ footer{
         justify-content: space-between;
     }
 }
+

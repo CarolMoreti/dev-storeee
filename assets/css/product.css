@@ -1,20 +1,22 @@
+/*BREADCRUMB*/
 .breadcrumb{
     margin: 0 24px;
     color: #7f7f7f;
     font-size: 1.6rem;
 }
-@media(width>1024px) {
+@media(width>1024px){
     .breadcrumb{
         margin-top: 32px;
     }
 }
+/*AREA DO PRODUTO*/
 .product{
     display: flex;
     flex-direction: column;
     margin: 32px 24px;
 }
 .product .photo{
-    background-color: #fff;
+    background-color: #ffffff;
     border: 1px solid #d9d9d9;
     border-radius: 4px;
     display: flex;
@@ -23,7 +25,7 @@
     padding: 40px;
 }
 .product .photo img{
-    width: 100%
+    width: 100%;
 }
 .product .info{
     flex:1;
@@ -31,7 +33,7 @@
 }
 .product .info .id{
     font-size: 1.2rem;
-    color: #7f7f7f;  
+    color:#7f7f7f;
 }
 .product .info .name{
     font-size: 2.4rem;
@@ -40,7 +42,7 @@
 }
 .product .info .size{
     font-size: 1.6rem;
-    color: #7f7f7f;
+    color:#7f7f7f;
     margin-top: 16px;
     margin-bottom: 32px;
 }
@@ -58,7 +60,7 @@
 }
 .product .info .price-to{
     font-size: 4rem;
-    color: #1d4ffe;
+    color:#1d4FFE;
     font-weight: bolder;
 }
 .product .info .payments{
@@ -86,7 +88,7 @@
     gap: 16px;
     margin-top: 19px;
 }
-@media (width>1024px) {
+@media(width>1024px){
     .product{
         flex-direction: row;
         gap: 136px;
@@ -98,12 +100,13 @@
         margin-top: 0;
     }
 }
+/*DESCRIÇÃO DO PRODUTO*/
 .description{
     margin: 0 24px;
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid #d9d9d9;
     border-radius: 8px;
-    padding:24px;
+    padding: 24px;
 }
 .description .desc-header{
     display: flex;
@@ -118,22 +121,23 @@
 .description .desc-body{
     margin-top: 32px;
 }
+/*AREA DE RELACIONADOS*/
 .related{
-    margin: 40px 24px;
+    margin:40px 24px;
 }
-.related .related-title{
+.related-title{
     font-size: 2.4rem;
     font-weight: bold;
     color: black;
 }
-.related .related-grid{
+.related-grid{
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
     margin-top: 40px;
 }
-@media(width>1024){
-    .related .related-grid{
+@media(width>1024px){
+    .related-grid{
         grid-template-columns: repeat(4, 1fr);
     }
 }

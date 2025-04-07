@@ -1,5 +1,5 @@
 .newsletter{
-    background-color: white;
+    background-color: #ffffff;
     border-top: 1px solid #d9d9d9;
 }
 .news-area{
@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap:32px;
 }
 .news-left{
     width: 220px;
@@ -21,7 +21,7 @@
     height: 68px;
 }
 .news-left h3{
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: normal;
     color: black;
     margin: 24px 0;

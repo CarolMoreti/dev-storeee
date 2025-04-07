@@ -16,7 +16,7 @@
 .banner-area a img{
     width: 100%;
 }
-.banner-area .active{
+.banner-area a.active{
     z-index: 10;
 }
 .banner-counter-area{
@@ -29,12 +29,12 @@
     margin-top: 15px;
     padding: 10px;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0,0,0, 0.3);
 }
 .banner-counter-item{
     width: 28px;
     height: 28px;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -46,11 +46,12 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: white;
+    background-color: #ffffff;
 }
 .banner-counter-item.active{
     opacity: 1;
 }
+/*AREA DO WARNINGS*/
 .warnings{
     display: flex;
     flex-direction: column;
@@ -67,9 +68,9 @@
 }
 .warning .warning-icon{
     border-right: 1px solid #d9d9d9;
-    padding-left:16px ;
-    padding-right:40px ;
-    margin-right:32px ;
+    padding-left: 16px;
+    padding-right: 40px;
+    margin-right: 32px;
 }
 .warning .warning-title{
     font-size: 2rem;
@@ -90,7 +91,7 @@
         padding-right: 20px;
     }
 }
-
+/*SEÇÃO DE PRODUTOS*/
 .product-list{
     margin: 24px;
 }
@@ -114,7 +115,7 @@
 }
 .product-item{
     flex: 1;
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid #d9d9d9;
     border-radius: 9px;
     padding: 34px;
@@ -136,21 +137,21 @@
 .product-item .product-price{
     font-weight: bold;
     font-size: 2.4rem;
-    color: #1d4ffe;
-    margin: 8px 0;
+    color:#1d4ffe;
+    margin:8px 0;
 }
 .product-item .product-info{
     font-size: 1.8rem;
-    color: #7f7f7f;
+    color:#7f7f7f;
 }
 .product-item .product-fav{
     position: absolute;
     right: 38px;
     top: 38px;
-    background-color: white;
+    background-color: #ffffff;
     width: 51px;
     height: 51px;
-    border: 1px solid #d7d7d7;
+    border: 1px solid #B7B7B7;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -158,19 +159,26 @@
     cursor: pointer;
 }
 .product-item .product-fav img{
-    height: 25px;
     width: 25px;
+    height: 25px;
 }
-@media (width>1024px) {
+@media(width>1024px){
     .product-item{
         padding: 20px;
     }
     .product-item .product-fav{
         right: 20px;
-        top:20px;
+        top: 20px;
     }
-    .product-list h4, .product-list h5{
+    .product-list h4,
+    .product-list h5{
         text-align: left;
+    }
+    .product-list h4{
+        font-size: 2.4rem;
+    }
+    .product-list h5{
+        font-size: 1.6rem;
     }
     .products-area{
         margin-top: 40px;
